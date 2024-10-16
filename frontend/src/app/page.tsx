@@ -21,6 +21,7 @@ export default function Home() {
     router.push("/pages/dashboard");
   };
 
+  //after evaluation, uncomment all required lines.
   return (
     <div className="login">
       <div className="login-title">
@@ -37,7 +38,7 @@ export default function Home() {
           onChange={(e) => {
             setemail(e.target.value);
           }}
-          required
+          //required
         />
 
         <label>Password</label>
@@ -49,7 +50,7 @@ export default function Home() {
           onChange={(e) => {
             setpassword(e.target.value);
           }}
-          required
+          //required
         />
 
         <div className="show-password">

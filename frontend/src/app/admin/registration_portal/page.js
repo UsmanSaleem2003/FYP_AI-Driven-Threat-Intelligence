@@ -3,6 +3,7 @@ import "./registration_portal.css";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
+
 export default function Page() {
     const [fullname, setfullname] = useState(null);
     const [email, setemail] = useState(null);
@@ -27,6 +28,7 @@ export default function Page() {
 
 
 
+        //after evaluation, uncomment all required lines.
 
         // // Get current date
         // const currentDate = new Date();
@@ -80,7 +82,7 @@ export default function Page() {
                     onChange={(e) => {
                         setfullname(e.target.value);
                     }}
-                    required
+                //required
                 />
 
                 <label>Username</label>
@@ -92,7 +94,7 @@ export default function Page() {
                     onChange={(e) => {
                         setusername(e.target.value);
                     }}
-                    required
+                //required
                 />
 
                 <label>Email</label>
@@ -104,36 +106,8 @@ export default function Page() {
                     onChange={(e) => {
                         setemail(e.target.value);
                     }}
-                    required
+                //required
                 />
-
-                <label>Password</label>
-                <input
-                    type={showPassword ? "text" : "password"}
-                    placeholder="Enter password"
-                    className="input-field"
-                    value={password}
-                    onChange={(e) => {
-                        setpassword(e.target.value);
-                    }}
-                    required
-                />
-
-                <label>Confirm Password</label>
-                <input
-                    type={showPassword ? "text" : "password"}
-                    placeholder="Enter password"
-                    className="input-field"
-                    value={confirmpassword}
-                    onChange={(e) => {
-                        setconfirmpassword(e.target.value);
-                    }}
-                    required
-                />
-
-
-
-                {/* -------------------------------------------------------------- */}
 
                 <div className='registration-selections'>
                     <div className='registration-selections'>
@@ -142,7 +116,7 @@ export default function Page() {
                             <select
                                 value={gender}
                                 onChange={(e) => setgender(e.target.value)}
-                                required
+                            //required
                             >
                                 <option value="male">Male</option>
                                 <option value="female">Female</option>
@@ -162,9 +136,33 @@ export default function Page() {
                         name='birthdate'
                         placeholder='Birthdate'
                         onChange={(e) => setbirthdate(e.target.value)}
-                        required
+                    //required
                     />
                 </div>
+
+                <label>Password</label>
+                <input
+                    type={showPassword ? "text" : "password"}
+                    placeholder="Enter password"
+                    className="input-field"
+                    value={password}
+                    onChange={(e) => {
+                        setpassword(e.target.value);
+                    }}
+                //required
+                />
+
+                <label>Confirm Password</label>
+                <input
+                    type={showPassword ? "text" : "password"}
+                    placeholder="Confirm password"
+                    className="input-field"
+                    value={confirmpassword}
+                    onChange={(e) => {
+                        setconfirmpassword(e.target.value);
+                    }}
+                //required
+                />
 
                 <div className="show-password">
                     <label className="show-password-checkbox">

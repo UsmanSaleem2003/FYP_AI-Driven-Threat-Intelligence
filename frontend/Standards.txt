@@ -1,0 +1,4 @@
+<!-- Input Fields Background Color -->
+<!--   background-color: rgb(246, 251, 255); -->
+<!-- Text Color everywhere -->
+<!-- color: aliceblue; -->
