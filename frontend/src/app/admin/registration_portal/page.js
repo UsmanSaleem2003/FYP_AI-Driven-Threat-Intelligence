@@ -3,7 +3,6 @@ import "./registration_portal.css";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
-
 export default function Page() {
     const [fullname, setfullname] = useState(null);
     const [email, setemail] = useState(null);
