@@ -1,0 +1,86 @@
+.login {
+  width: 500px;
+  height: 450px;
+  margin: auto;
+  margin-top: 100px;
+  border: 3px solid rgb(15, 47, 73);
+  border-radius: 14px;
+  background-color: rgb(37, 84, 122);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 50px 10px,
+    rgba(0, 0, 0, 0.22) 0px 0px 40px 15px;
+}
+
+.login-title {
+  display: flex;
+  justify-content: center;
+}
+
+.login-title-span {
+  font-weight: 600;
+  font-size: 33px;
+  letter-spacing: 1.2px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: fit-content;
+}
+
+label {
+  font-size: larger;
+  color: aliceblue;
+}
+
+.input-field {
+  height: 40px;
+  width: 350px;
+  border-radius: 6px;
+  font-size: 18px;
+  padding-left: 10px;
+  border: 1px solid #ccc;
+  letter-spacing: 0.5px;
+  background-color: aliceblue;
+}
+
+.input-field:focus {
+  outline: 0.5px solid rgb(15, 38, 58);
+}
+
+.show-password {
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  width: fit-content;
+  color: aliceblue;
+}
+.show-password input {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  padding-top: 6px !important;
+}
+
+.login-button {
+  height: 50px;
+  width: 300px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  font-size: 20px;
+  border: none;
+  color: aliceblue;
+  background-color: rgb(15, 38, 58);
+  cursor: pointer;
+}
+
+.login-button:hover {
+  box-shadow: rgba(14, 30, 37, 0.2) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.4) 0px 2px 16px 0px;
+  transition: 0.25s ease-in;
+}
